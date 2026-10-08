@@ -1,0 +1,731 @@
+<!DOCTYPE html>
+<html lang="fr" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/png" href="/favicon.png" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Royal Data | Agence IA Premium</title>
+  <meta name="description" content="Agence spécialisée dans les services d'intelligence artificielle et formations pour professionnels.">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+  <!-- Loader -->
+  <div id="loader-wrapper" style="position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: var(--bg-primary); z-index: 9999; display: flex; justify-content: center; align-items: center; transition: opacity 0.5s ease, visibility 0.5s ease;">
+    <div class="spinner">
+      <span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span>
+    </div>
+  </div>
+  <div class="blob blob-1"></div>
+  <div class="blob blob-2"></div>
+
+  <header>
+    <a href="/" class="logo" style="display: flex; align-items: center; justify-content: center; width: 50px; height: 50px; border-radius: 50%; overflow: hidden; background-color: #fff; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
+      <img src="/logo.png" alt="Royal Data" style="height: 100%; width: 100%; object-fit: contain; padding: 4px;">
+    </a>
+    <nav class="main-nav" id="main-nav">
+      <ul class="nav-links">
+        <li><a href="/" class="active"><span class="fr">Accueil</span><span class="en">Home</span></a></li>
+        <li><a href="/produits.html"><span class="fr">Nos produits</span><span class="en">Our products</span></a></li>
+        <li><a href="/a-propos.html"><span class="fr">À propos</span><span class="en">About us</span></a></li>
+        <li><a href="/contact.html"><span class="fr">Contact</span><span class="en">Contact</span></a></li>
+      </ul>
+    </nav>
+    <div class="header-right">
+      <div class="nav-actions">
+        <button id="lang-toggle" class="icon-btn" aria-label="Toggle Language">EN</button>
+        <button id="theme-toggle" class="icon-btn" aria-label="Toggle Theme"><i class="fa-regular fa-moon"></i></button>
+        <a href="https://wa.me/233256625887" class="cta-header">
+          <span class="fr">Discuter</span><span class="en">Discuss</span>
+          <svg viewBox="0 0 13 10" height="10px" width="15px">
+            <path d="M1,5 L11,5"></path>
+            <polyline points="8 1 12 5 8 9"></polyline>
+          </svg>
+        </a>
+      </div>
+      <button class="hamburger" id="hamburger" aria-label="Menu">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section class="hero hero-centered">
+      <div class="hero-bg-hands"></div>
+      
+      <div class="hero-content fade-up" style="text-align: center; position: relative; z-index: 2;">
+        <h1 class="hero-title-large">
+          <span class="fr">
+            <span class="title-light">Apprends à utiliser l'IA</span><br/>
+            <span class="title-dark">pour de vrais résultats</span>
+          </span>
+          <span class="en">
+            <span class="title-light">Learn to use AI</span><br/>
+            <span class="title-dark">for real results</span>
+          </span>
+        </h1>
+        <p class="hero-subtitle">
+          <span class="fr">Des méthodes simples, pratiques, rapides et testées par Royal Data —<br/> pour ta communication, tes visuels et tes vidéos, sans jargon.</span>
+          <span class="en">Simple, practical, fast and tested methods by Royal Data —<br/> for your communication, visuals, and videos, without jargon.</span>
+        </p>
+        <a href="https://wa.me/233256625887" class="btn btn-hero-dark">
+          <span class="fr">Discuter de mon projet</span>
+          <span class="en">Discuss my project</span>
+          <i class="fa-solid fa-arrow-right"></i>
+        </a>
+      </div>
+      
+      <div class="hero-footer fade-up" style="transition-delay: 200ms;">
+        <div class="hf-left">
+          <span class="fr">Agence IA · Bénin & international.</span>
+          <span class="en">AI Agency · Benin & international.</span>
+        </div>
+        <div class="hf-center">
+          <span class="fr">Agence sélective, accompagnement humain.</span>
+          <span class="en">Selective agency, human support.</span>
+        </div>
+        <div class="hf-right">
+          <span class="fr">[Découvrir]</span>
+          <span class="en">[Explore]</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- STATS (Sticky Notes Design) -->
+    <section class="stats fade-up">
+      <div class="stats-header">
+        <h2>
+          <span class="fr">Alors, quelle est la suite ?</span>
+          <span class="en">So, what's next?</span>
+        </h2>
+        <p>
+          <span class="fr">Après notre prise de contact, voici ce que nous apportons concrètement à votre projet pour garantir le résultat.</span>
+          <span class="en">After our initial contact, here is what we bring concretely to your project to guarantee the result.</span>
+        </p>
+      </div>
+      <div class="stats-container">
+        <!-- Note 1 -->
+        <div class="stat-sticky-card rot-1">
+          <div class="tape tape-1"></div>
+          <div class="stat-inner bg-1">
+            <span class="stat-number" data-target="3">0</span>
+            <span class="stat-label">
+              <span class="fr">Services phares pour couvrir tes besoins</span><span class="en">Core services to cover your needs</span>
+            </span>
+          </div>
+        </div>
+        <!-- Note 2 -->
+        <div class="stat-sticky-card rot-2">
+          <div class="tape tape-2"></div>
+          <div class="stat-inner bg-2">
+            <span class="stat-number" data-target="50" data-prefix="+">0</span>
+            <span class="stat-label">
+              <span class="fr">Visuels déjà livrés avec succès</span><span class="en">Visuals already delivered successfully</span>
+            </span>
+          </div>
+        </div>
+        <!-- Note 3 -->
+        <div class="stat-sticky-card rot-3">
+          <div class="tape tape-3"></div>
+          <div class="stat-inner bg-3">
+            <span class="stat-number" data-target="3">0</span>
+            <span class="stat-label">
+              <span class="fr">Produits en ligne pour te former</span><span class="en">Online products to train yourself</span>
+            </span>
+          </div>
+        </div>
+        <!-- Note 4 -->
+        <div class="stat-sticky-card rot-4">
+          <div class="tape tape-4"></div>
+          <div class="stat-inner bg-4">
+            <span class="stat-number" style="font-size: 2.5rem; display: flex; align-items: baseline;">
+              <span style="font-family: var(--font-headings);">&lt; 48</span><span style="font-size: 1.5rem; margin-left: 2px;">h</span>
+            </span>
+            <span class="stat-label">
+              <span class="fr">Délai pour ton premier retour</span><span class="en">Time for your first feedback</span>
+            </span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- LE PROBLÈME -->
+    <section class="fade-up">
+      <div class="hero-container">
+        <div class="hero-content">
+          <span class="eyebrow">
+            <span class="fr">Le constat</span><span class="en">The observation</span>
+          </span>
+          <h2>
+            <span class="fr">Tu perds du temps là où l'IA pourrait déjà travailler</span>
+            <span class="en">You lose time where AI could already be working</span>
+          </h2>
+          <p>
+            <span class="fr">La plupart des entrepreneurs et indépendants savent que l'IA peut les aider, mais ne savent pas par où commencer, ni comment l'utiliser sans perdre encore plus de temps. Royal Data existe pour combler exactement cet écart.</span>
+            <span class="en">Most entrepreneurs and freelancers know AI can help them, but don't know where to start, nor how to use it without wasting even more time. Royal Data exists to bridge exactly this gap.</span>
+          </p>
+        </div>
+        <div class="grid-3" style="grid-template-columns: 1fr;">
+          <div class="card" style="padding: 2rem;">
+            <div style="display: flex; gap: 1.5rem; align-items: flex-start; margin-bottom: 1.5rem;">
+              <div class="card-icon" style="margin-bottom: 0; min-width: 50px; height: 50px;">
+                <i class="fa-regular fa-eye-slash"></i>
+              </div>
+              <div>
+                <h4 style="margin-bottom: 0.5rem;">
+                  <span class="fr">Visibilité qui stagne</span><span class="en">Stagnating visibility</span>
+                </h4>
+                <p style="margin-bottom: 0; font-size: 0.95rem;">
+                  <span class="fr">Peu de publications, pas de régularité, une image qui ne reflète pas le sérieux de l'activité.</span>
+                  <span class="en">Few posts, no consistency, an image that doesn't reflect the seriousness of the business.</span>
+                </p>
+              </div>
+            </div>
+            <div style="display: flex; gap: 1.5rem; align-items: flex-start; margin-bottom: 1.5rem;">
+              <div class="card-icon" style="margin-bottom: 0; min-width: 50px; height: 50px;">
+                <i class="fa-regular fa-image"></i>
+              </div>
+              <div>
+                <h4 style="margin-bottom: 0.5rem;">
+                  <span class="fr">Visuels coûteux et lents</span><span class="en">Slow and costly visuals</span>
+                </h4>
+                <p style="margin-bottom: 0; font-size: 0.95rem;">
+                  <span class="fr">Faire appel à un designer à chaque besoin ponctuel n'est ni rapide ni toujours accessible.</span>
+                  <span class="en">Hiring a designer for every specific need is neither fast nor always accessible.</span>
+                </p>
+              </div>
+            </div>
+            <div style="display: flex; gap: 1.5rem; align-items: flex-start;">
+              <div class="card-icon" style="margin-bottom: 0; min-width: 50px; height: 50px;">
+                <i class="fa-solid fa-robot"></i>
+              </div>
+              <div>
+                <h4 style="margin-bottom: 0.5rem;">
+                  <span class="fr">IA testée sans méthode</span><span class="en">AI tested without method</span>
+                </h4>
+                <p style="margin-bottom: 0; font-size: 0.95rem;">
+                  <span class="fr">Beaucoup essaient seuls, sans structure, et abandonnent avant un résultat exploitable.</span>
+                  <span class="en">Many try on their own, without structure, and give up before getting a usable result.</span>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- NOTRE MÉTHODE -->
+    <section class="fade-up method-section" style="background-color: var(--bg-secondary); overflow: hidden;">
+      <div class="section-header">
+        <span class="eyebrow">
+          <span class="fr">Notre méthode</span><span class="en">Our method</span>
+        </span>
+        <h2>
+          <span class="fr">Une méthode simple, en trois temps</span>
+          <span class="en">A simple, three-step method</span>
+        </h2>
+        <p>
+          <span class="fr">Pas de théorie interminable : on identifie le besoin, on produit avec l'IA, on livre — rapidement et avec un accompagnement humain.</span>
+          <span class="en">No endless theory: we identify the need, we produce with AI, we deliver — quickly and with human support.</span>
+        </p>
+      </div>
+      <div class="timeline-container">
+        <!-- Connecting dashed line is done via CSS -->
+        <div class="timeline-line"></div>
+        
+        <div class="timeline-item left fade-up">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <div class="thumbtack blue"></div>
+            <div class="card-num">01</div>
+            <h3><span class="fr">On cerne le besoin réel</span><span class="en">We identify the real need</span></h3>
+            <p><span class="fr">Un échange direct pour comprendre ce qu'il te faut vraiment, sans jargon ni questionnaire interminable.</span><span class="en">A direct chat to understand what you really need, without jargon or endless questionnaires.</span></p>
+          </div>
+        </div>
+
+        <div class="timeline-item right fade-up" style="transition-delay: 150ms;">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <div class="thumbtack gold"></div>
+            <div class="card-num">02</div>
+            <h3><span class="fr">On produit avec l'IA</span><span class="en">We produce with AI</span></h3>
+            <p><span class="fr">Nos outils testés permettent de générer un premier résultat rapidement, avec un vrai regard humain dessus.</span><span class="en">Our tested tools allow us to generate an initial result quickly, with a real human review.</span></p>
+          </div>
+        </div>
+
+        <div class="timeline-item left fade-up" style="transition-delay: 300ms;">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <div class="thumbtack green"></div>
+            <div class="card-num">03</div>
+            <h3><span class="fr">On ajuste et on livre</span><span class="en">We adjust and deliver</span></h3>
+            <p><span class="fr">Tu valides, on fait les modifications nécessaires, et tu reçois un résultat prêt à publier sans surprise.</span><span class="en">You approve, we make the necessary adjustments, and you receive a ready-to-publish result.</span></p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- NOS SERVICES -->
+    <section id="services" class="fade-up" style="background-color: var(--bg-primary);">
+      <div class="section-header">
+        <span class="eyebrow">
+          <span class="fr">Nos services</span><span class="en">Our services</span>
+        </span>
+        <h2>
+          <span class="fr">Toutes nos offres sur-mesure</span>
+          <span class="en">All our tailor-made offers</span>
+        </h2>
+        <p>
+          <span class="fr">Des prestations pensées pour un besoin précis, avec un résultat rapide et garanti.</span>
+          <span class="en">Services designed for a specific need, with a fast and guaranteed result.</span>
+        </p>
+      </div>
+      
+      <div class="udemy-grid" style="display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 2rem; max-width: 1400px; margin: 0 auto;">
+        
+        <!-- Service 1 -->
+        <div class="udemy-card">
+          <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&w=400&q=80" alt="Communication optimisée" class="uc-img">
+          <div class="uc-content">
+            <h3><span class="fr">Communication optimisée</span><span class="en">Optimized communication</span></h3>
+            <p class="uc-author">Par Royal Data</p>
+            <div class="uc-rating">
+              <span class="uc-score">4.9</span>
+              <span class="uc-stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></span>
+              <span class="uc-count">(112)</span>
+            </div>
+            <p class="uc-desc">
+              <span class="fr">Stratégie de contenu et rédaction pour tes réseaux sociaux.</span>
+            </p>
+            <div class="uc-price">25 000 FCFA <span class="uc-price-period">/ mois</span></div>
+            <a href="https://wa.me/233256625887" class="btn btn-dark uc-btn">
+              <span class="fr">Discuter du projet</span>
+              <i class="fa-solid fa-arrow-right uc-icon"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Service 2 -->
+        <div class="udemy-card">
+          <img src="https://images.unsplash.com/photo-1626785774573-4b799315345d?auto=format&fit=crop&w=400&q=80" alt="Affiches professionnelles" class="uc-img">
+          <div class="uc-content">
+            <h3><span class="fr">Affiches professionnelles</span><span class="en">Professional posters</span></h3>
+            <p class="uc-author">Par Royal Data</p>
+            <div class="uc-rating">
+              <span class="uc-score">5.0</span>
+              <span class="uc-stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></span>
+              <span class="uc-count">(89)</span>
+            </div>
+            <p class="uc-desc">
+              <span class="fr">Des visuels IA soignés pour tes promotions et événements.</span>
+            </p>
+            <div class="uc-price">5 000 FCFA <span class="uc-price-period">/ unité</span></div>
+            <a href="https://wa.me/233256625887" class="btn btn-dark uc-btn">
+              <span class="fr">Discuter du projet</span>
+              <i class="fa-solid fa-arrow-right uc-icon"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Service 3 -->
+        <div class="udemy-card">
+          <img src="https://images.unsplash.com/photo-1492691527719-9d1e07e534b4?auto=format&fit=crop&w=400&q=80" alt="Vidéos marketing" class="uc-img">
+          <div class="uc-content">
+            <h3><span class="fr">Vidéos marketing</span><span class="en">Marketing videos</span></h3>
+            <p class="uc-author">Par Royal Data</p>
+            <div class="uc-rating">
+              <span class="uc-score">4.8</span>
+              <span class="uc-stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i></span>
+              <span class="uc-count">(45)</span>
+            </div>
+            <p class="uc-desc">
+              <span class="fr">Vidéos IA courtes et percutantes pour capter l'attention.</span>
+            </p>
+            <div class="uc-price">20 000 FCFA</div>
+            <a href="https://wa.me/233256625887" class="btn btn-dark uc-btn">
+              <span class="fr">Discuter du projet</span>
+              <i class="fa-solid fa-arrow-right uc-icon"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Service 4 (New) -->
+        <div class="udemy-card">
+          <img src="https://images.unsplash.com/photo-1432821596592-e2c18b78144f?auto=format&fit=crop&w=400&q=80" alt="Création de contenus avec l'IA" class="uc-img">
+          <div class="uc-content">
+            <h3><span class="fr">Création contenus IA</span><span class="en">AI Content creation</span></h3>
+            <p class="uc-author">Par Royal Data</p>
+            <div class="uc-rating">
+              <span class="uc-score">4.9</span>
+              <span class="uc-stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></span>
+              <span class="uc-count">(nouveau)</span>
+            </div>
+            <p class="uc-desc">
+              <span class="fr">Génération massive et intelligente de contenus sur mesure.</span>
+            </p>
+            <div class="uc-price">20 000 FCFA <span class="uc-price-period">/ provisoire</span></div>
+            <a href="https://wa.me/233256625887" class="btn btn-dark uc-btn">
+              <span class="fr">Discuter du projet</span>
+              <i class="fa-solid fa-arrow-right uc-icon"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Service 5 (New) -->
+        <div class="udemy-card">
+          <img src="https://images.unsplash.com/photo-1590602847861-f357a9332bbc?auto=format&fit=crop&w=400&q=80" alt="Voix et audio" class="uc-img">
+          <div class="uc-content">
+            <h3><span class="fr">Voix et audio</span><span class="en">Voice and audio</span></h3>
+            <p class="uc-author">Par Royal Data</p>
+            <div class="uc-rating">
+              <span class="uc-score">4.7</span>
+              <span class="uc-stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i></span>
+              <span class="uc-count">(nouveau)</span>
+            </div>
+            <p class="uc-desc">
+              <span class="fr">Clonage vocal, voix off professionnelles et mixage via IA.</span>
+            </p>
+            <div class="uc-price">15 000 FCFA <span class="uc-price-period">/ provisoire</span></div>
+            <a href="https://wa.me/233256625887" class="btn btn-dark uc-btn">
+              <span class="fr">Discuter du projet</span>
+              <i class="fa-solid fa-arrow-right uc-icon"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Service 6 (New) -->
+        <div class="udemy-card">
+          <img src="https://images.unsplash.com/photo-1557804506-669a67965ba0?auto=format&fit=crop&w=400&q=80" alt="Présentations" class="uc-img">
+          <div class="uc-content">
+            <h3><span class="fr">Présentations</span><span class="en">Presentations</span></h3>
+            <p class="uc-author">Par Royal Data</p>
+            <div class="uc-rating">
+              <span class="uc-score">5.0</span>
+              <span class="uc-stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></span>
+              <span class="uc-count">(nouveau)</span>
+            </div>
+            <p class="uc-desc">
+              <span class="fr">Création de slides et pitch decks percutants et visuels.</span>
+            </p>
+            <div class="uc-price">30 000 FCFA <span class="uc-price-period">/ provisoire</span></div>
+            <a href="https://wa.me/233256625887" class="btn btn-dark uc-btn">
+              <span class="fr">Discuter du projet</span>
+              <i class="fa-solid fa-arrow-right uc-icon"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Service 7 (New) -->
+        <div class="udemy-card">
+          <img src="https://images.unsplash.com/photo-1505373877841-8d25f7d46678?auto=format&fit=crop&w=400&q=80" alt="Création de produits" class="uc-img">
+          <div class="uc-content">
+            <h3><span class="fr">Création de produits</span><span class="en">Product creation</span></h3>
+            <p class="uc-author">Par Royal Data</p>
+            <div class="uc-rating">
+              <span class="uc-score">4.9</span>
+              <span class="uc-stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></span>
+              <span class="uc-count">(nouveau)</span>
+            </div>
+            <p class="uc-desc">
+              <span class="fr">Développement de produits numériques et formations.</span>
+            </p>
+            <div class="uc-price">50 000 FCFA <span class="uc-price-period">/ provisoire</span></div>
+            <a href="https://wa.me/233256625887" class="btn btn-dark uc-btn">
+              <span class="fr">Discuter du projet</span>
+              <i class="fa-solid fa-arrow-right uc-icon"></i>
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- TEASER PRODUITS NUMÉRIQUES -->
+    <section class="fade-up" style="background-color: var(--color-primary-dark); color: #fff; text-align: center; position: relative; overflow: hidden;">
+      <!-- Abstract Background Objects -->
+      <div style="position: absolute; top: -50px; left: -50px; width: 300px; height: 300px; background: radial-gradient(circle, rgba(234,88,12,0.2) 0%, transparent 70%); border-radius: 50%;"></div>
+      <div style="position: absolute; bottom: -100px; right: 10%; width: 400px; height: 400px; background: radial-gradient(circle, rgba(255,255,255,0.05) 0%, transparent 70%); border-radius: 50%;"></div>
+      
+      <div class="section-header" style="margin-bottom: 3rem; position: relative; z-index: 1;">
+        <h2 class="title-one-line" style="color: #fff; font-size: clamp(1.2rem, 3.5vw, 3.5rem); margin: 0 auto; text-align: center;">
+          <span class="fr">Envie d'apprendre à le faire toi-même ?</span>
+          <span class="en">Want to learn how to do it yourself?</span>
+        </h2>
+        <p style="color: rgba(255,255,255,0.8); max-width: 600px; margin: 0 auto;">
+          <span class="fr">Découvre nos formations et guides prêts à l'emploi, à prix fixe, pour créer tes propres visuels IA en autonomie.</span>
+          <span class="en">Discover our ready-to-use training and guides, at a fixed price, to create your own AI visuals independently.</span>
+        </p>
+      </div>
+      <div style="display: flex; gap: 1.5rem; justify-content: center; flex-wrap: wrap; margin-bottom: 3rem; position: relative; z-index: 1;">
+        <span style="background: rgba(255,255,255,0.1); padding: 0.75rem 1.5rem; border-radius: var(--radius-xl); border: 1px solid rgba(255,255,255,0.2);">Avatars IA — 4 999 FCFA</span>
+        <span style="background: rgba(255,255,255,0.1); padding: 0.75rem 1.5rem; border-radius: var(--radius-xl); border: 1px solid rgba(255,255,255,0.2);">Affiches IA — 4 900 FCFA</span>
+        <span style="background: rgba(255,255,255,0.1); padding: 0.75rem 1.5rem; border-radius: var(--radius-xl); border: 1px solid rgba(255,255,255,0.2);">IA Studio Pro — 4 000 FCFA</span>
+      </div>
+      <a href="https://royaldata.mychariow.shop/" class="btn btn-premium" style="position: relative; z-index: 1;">
+        <span class="fr">Voir tous les produits</span>
+        <span class="en">View all products</span>
+      </a>
+    </section>
+
+    <!-- PREUVES (Portfolio Gallery) -->
+    <section class="fade-up gallery-section" style="background-color: var(--bg-primary); overflow: hidden; padding-bottom: 8rem; position: relative;">
+      <div class="section-header" style="margin-bottom: 4rem;">
+        <span class="eyebrow" style="color: #c48b29; font-weight: 700; letter-spacing: 0.1em; background: none; padding: 0;">
+          <span class="fr">Derrière les créations</span><span class="en">Behind the Designs</span>
+        </span>
+        <h2 style="font-size: clamp(2rem, 5vw, 3.5rem); margin: 0.5rem 0 1rem; color: var(--text-main);">
+          <span class="fr">Curieux de voir ce que<br>j'ai créé d'autre ?</span>
+          <span class="en">Curious What Else<br>I've Created?</span>
+        </h2>
+        <p style="color: var(--text-muted); font-size: 1rem; max-width: 600px; margin: 0 auto;">
+          <span class="fr">Explorez davantage de projets de création visuelle et digitale dans mon portfolio étendu.</span>
+          <span class="en">Explore more visual and digital design projects in my extended portfolio.</span>
+        </p>
+        <div style="margin-top: 1.5rem;">
+          <a href="#services" class="btn btn-pill" style="background-color: transparent; border: none; color: #111; font-weight: 600; padding: 0; display: inline-flex; align-items: center; gap: 10px;">
+            <span class="fr">Voir plus de projets</span><span class="en">See more Projects</span>
+            <span style="display: flex; align-items: center; justify-content: center; width: 32px; height: 32px; background-color: #c48b29; color: white; border-radius: 50%;"><i class="fa-solid fa-arrow-right" style="font-size: 14px;"></i></span>
+          </a>
+        </div>
+      </div>
+      
+      <div class="curved-gallery-wrapper">
+        <div class="curved-gallery-track" id="gallery-track">
+          <!-- Items injected via JS or here -->
+          <div class="gallery-item"><img src="/src/assets/rep1.jpeg" alt="Portfolio 1"><div class="g-info"><span class="g-num">#01</span><br>Visuel IA</div></div>
+          <div class="gallery-item"><img src="/src/assets/rep2.jpeg" alt="Portfolio 2"><div class="g-info"><span class="g-num">#02</span><br>Design</div></div>
+          <div class="gallery-item"><img src="/src/assets/rep3.jpeg" alt="Portfolio 3"><div class="g-info"><span class="g-num">#03</span><br>Produit Digital</div></div>
+          <div class="gallery-item"><img src="/src/assets/rep4.jpeg" alt="Portfolio 4"><div class="g-info"><span class="g-num">#04</span><br>Stratégie</div></div>
+          <div class="gallery-item"><img src="/src/assets/rep5.jpeg" alt="Portfolio 5"><div class="g-info"><span class="g-num">#05</span><br>Affiche Pro</div></div>
+          <div class="gallery-item"><img src="/src/assets/rep6.jpeg" alt="Portfolio 6"><div class="g-info"><span class="g-num">#06</span><br>Marketing</div></div>
+          <div class="gallery-item"><img src="/src/assets/rep7.jpeg" alt="Portfolio 7"><div class="g-info"><span class="g-num">#07</span><br>Illustration</div></div>
+          <div class="gallery-item"><img src="/src/assets/rep8.jpeg" alt="Portfolio 8"><div class="g-info"><span class="g-num">#08</span><br>Identité</div></div>
+          <div class="gallery-item"><img src="/src/assets/rep9.jpeg" alt="Portfolio 9"><div class="g-info"><span class="g-num">#09</span><br>Création</div></div>
+          <div class="gallery-item"><img src="/src/assets/rep10.jpeg" alt="Portfolio 10"><div class="g-info"><span class="g-num">#10</span><br>Média</div></div>
+          <div class="gallery-item"><img src="/src/assets/rep11.jpeg" alt="Portfolio 11"><div class="g-info"><span class="g-num">#11</span><br>Publicité</div></div>
+          <div class="gallery-item"><img src="/src/assets/rep12.jpeg" alt="Portfolio 12"><div class="g-info"><span class="g-num">#12</span><br>Promo</div></div>
+          <div class="gallery-item"><img src="/src/assets/rep13.jpeg" alt="Portfolio 13"><div class="g-info"><span class="g-num">#13</span><br>Campagne</div></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TESTIMONIALS -->
+    <section class="fade-up" style="background-color: #ffffff; position: relative; padding: 8rem 0 10rem; overflow: hidden;">
+      <!-- "CLIENT" faded background text -->
+      <div class="client-bg-text">CLIENT</div>
+      
+      <div style="position: relative; z-index: 1; width: 100%; max-width: 900px; margin: 0 auto; display: flex; align-items: center; justify-content: center; gap: 2rem; padding: 0 1.5rem;">
+        
+        <!-- Left Arrow -->
+        <button class="testi-arrow" id="testi-prev">
+          <i class="fa-solid fa-chevron-left"></i>
+        </button>
+
+        <!-- Stack container -->
+        <div class="testimonial-stack" id="testimonial-stack">
+          <!-- Back card (smallest) -->
+          <div class="testi-card testi-card-back"></div>
+          <!-- Middle card -->
+          <div class="testi-card testi-card-middle"></div>
+          <!-- Front card -->
+          <div class="testi-card testi-card-front" id="testi-front">
+            <div style="display: flex; align-items: center; gap: 1rem; margin-bottom: 1.5rem;">
+              <div id="testi-avatar" style="width: 50px; height: 50px; border-radius: 50%; border: 3px solid #c48b29; background-color: var(--color-primary); color: #fff; display: flex; align-items: center; justify-content: center; font-family: var(--font-headings); font-weight: 600; font-size: 1.2rem;">SM</div>
+              <div style="flex-grow: 1;">
+                <h4 id="testi-name" style="margin: 0; font-size: 1.25rem; font-weight: 700; color: var(--text-main);">Sarah M.</h4>
+                <p id="testi-role" style="margin: 0; font-size: 0.85rem; color: var(--text-muted);">Propriétaire d'entreprise</p>
+              </div>
+              <div style="color: #f4c150; font-size: 1.1rem; display: flex; gap: 2px;">
+                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+              </div>
+            </div>
+            <p style="font-size: 1.125rem; line-height: 1.6; color: var(--text-main); margin-bottom: 2rem;">
+              <span class="fr" id="testi-text-fr">"Une qualité de travail irréprochable et des conseils d'experts — c'est ce que j'ai vécu avec Royal Data. Voyez par vous-même pourquoi je leur confie tous mes projets de création !"</span>
+              <span class="en" id="testi-text-en">"Flawless work quality and expert guidance — that's what I experienced with Royal Data. See for yourself why I trust them with all my creation projects!"</span>
+            </p>
+            <div style="display: flex; gap: 1.25rem; color: var(--text-main); font-size: 1.5rem;">
+              <i class="fa-solid fa-heart"></i>
+              <i class="fa-regular fa-comment"></i>
+              <i class="fa-regular fa-paper-plane"></i>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right Arrow -->
+        <button class="testi-arrow" id="testi-next">
+          <i class="fa-solid fa-chevron-right"></i>
+        </button>
+
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="fade-up" style="background-color: var(--bg-secondary);">
+      <div class="section-header">
+        <span class="eyebrow">
+          <span class="fr">Questions fréquentes</span><span class="en">Frequently Asked Questions</span>
+        </span>
+        <h2>
+          <span class="fr">Tout ce qu'il faut savoir avant de commander</span>
+          <span class="en">Everything you need to know before ordering</span>
+        </h2>
+      </div>
+      <div style="max-width: 800px; margin: 0 auto;">
+        <div class="faq-item active">
+          <div class="faq-question">
+            <span class="fr">Comment se passe une commande ?</span>
+            <span class="en">How does an order work?</span>
+            <i class="fa-solid fa-plus faq-icon"></i>
+          </div>
+          <div class="faq-answer">
+            <div class="faq-answer-inner">
+              <span class="fr">Tu nous écris sur WhatsApp, on échange sur ton besoin, on te propose un tarif et un délai, puis on produit et on te livre directement dans la conversation.</span>
+              <span class="en">You text us on WhatsApp, we discuss your needs, we propose a price and a deadline, then we produce and deliver directly in the conversation.</span>
+            </div>
+          </div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-question">
+            <span class="fr">Quels sont les délais de livraison ?</span>
+            <span class="en">What are the delivery times?</span>
+            <i class="fa-solid fa-plus faq-icon"></i>
+          </div>
+          <div class="faq-answer">
+            <div class="faq-answer-inner">
+              <span class="fr">Ça dépend du service : une affiche peut être livrée en quelques jours, un accompagnement communication se construit sur la durée. On te donne un délai clair dès le premier échange.</span>
+              <span class="en">It depends on the service: a poster can be delivered in a few days, communication support is built over time. We give you a clear deadline from the first exchange.</span>
+            </div>
+          </div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-question">
+            <span class="fr">Comment se fait le paiement ?</span>
+            <span class="en">How is payment made?</span>
+            <i class="fa-solid fa-plus faq-icon"></i>
+          </div>
+          <div class="faq-answer">
+            <div class="faq-answer-inner">
+              <span class="fr">Le paiement se négocie directement avec nous sur WhatsApp, selon le service choisi — Mobile Money, virement ou autre selon ta situation.</span>
+              <span class="en">Payment is negotiated directly with us on WhatsApp, depending on the chosen service — Mobile Money, bank transfer, or other depending on your situation.</span>
+            </div>
+          </div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-question">
+            <span class="fr">Est-ce que Royal Data s'adresse aussi aux débutants ?</span>
+            <span class="en">Is Royal Data also for beginners?</span>
+            <i class="fa-solid fa-plus faq-icon"></i>
+          </div>
+          <div class="faq-answer">
+            <div class="faq-answer-inner">
+              <span class="fr">Oui. Nos services sont pensés pour être compris sans aucune connaissance technique en IA — on t'explique simplement ce dont tu as besoin de savoir.</span>
+              <span class="en">Yes. Our services are designed to be understood without any technical knowledge of AI — we simply explain what you need to know.</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA FINAL (Network Node Design) -->
+    <section class="fade-up" style="background-color: #ffffff; position: relative; padding: 6rem 0; overflow: hidden; display: flex; justify-content: center; align-items: center; min-height: 600px;">
+      <!-- Subtle Blue Gradient Blobs for background -->
+      <div style="position: absolute; top: -100px; right: -100px; width: 500px; height: 500px; background: radial-gradient(circle, rgba(200, 230, 255, 0.6) 0%, rgba(255,255,255,0) 70%); z-index: 0; pointer-events: none;"></div>
+      <div style="position: absolute; bottom: -150px; left: -100px; width: 600px; height: 600px; background: radial-gradient(circle, rgba(220, 235, 255, 0.7) 0%, rgba(255,255,255,0) 70%); z-index: 0; pointer-events: none;"></div>
+
+      <div class="network-cta-wrapper" style="position: relative; width: 100%; max-width: 1100px; height: 500px; z-index: 1;">
+        
+        <!-- SVG connecting lines -->
+        <svg viewBox="0 0 1100 500" preserveAspectRatio="none" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; pointer-events: none;">
+          <!-- Left side lines (4 lines) -->
+          <path d="M 300 250 C 220 250, 180 120, 100 120" fill="none" stroke="#e2e8f0" stroke-width="2" />
+          <path d="M 300 250 C 220 250, 180 200, 100 200" fill="none" stroke="#e2e8f0" stroke-width="2" />
+          <path d="M 300 250 C 220 250, 180 300, 100 300" fill="none" stroke="#e2e8f0" stroke-width="2" />
+          <path d="M 300 250 C 220 250, 180 380, 100 380" fill="none" stroke="#e2e8f0" stroke-width="2" />
+          
+          <!-- Right side lines (4 lines) -->
+          <path d="M 800 250 C 880 250, 920 120, 1000 120" fill="none" stroke="#e2e8f0" stroke-width="2" />
+          <path d="M 800 250 C 880 250, 920 200, 1000 200" fill="none" stroke="#e2e8f0" stroke-width="2" />
+          <path d="M 800 250 C 880 250, 920 300, 1000 300" fill="none" stroke="#e2e8f0" stroke-width="2" />
+          <path d="M 800 250 C 880 250, 920 380, 1000 380" fill="none" stroke="#e2e8f0" stroke-width="2" />
+        </svg>
+
+        <!-- Floating Icons (Left) -->
+        <div class="node-icon" style="top: 24%; left: 9%;"><i class="fa-solid fa-seedling" style="color: #4CAF50;"></i></div>
+        <div class="node-icon" style="top: 40%; left: 9%;"><i class="fa-brands fa-figma" style="color: #F24E1E;"></i></div>
+        <div class="node-icon" style="top: 60%; left: 9%;"><i class="fa-solid fa-robot" style="color: #9C27B0;"></i></div>
+        <div class="node-icon" style="top: 76%; left: 9%;"><i class="fa-solid fa-bullseye" style="color: #F44336;"></i></div>
+        
+        <!-- Floating Icons (Right) -->
+        <div class="node-icon" style="top: 24%; left: 91%;"><i class="fa-brands fa-trello" style="color: #0079BF;"></i></div>
+        <div class="node-icon" style="top: 40%; left: 91%;"><i class="fa-solid fa-shapes" style="color: #111;"></i></div>
+        <div class="node-icon" style="top: 60%; left: 91%;"><i class="fa-solid fa-bolt" style="color: #FF5722;"></i></div>
+        <div class="node-icon" style="top: 76%; left: 91%;"><i class="fa-solid fa-chart-pie" style="color: #2196F3;"></i></div>
+
+        <!-- Central Content Box -->
+        <div class="network-cta-center" style="width: 100%; max-width: 600px; padding: 2.5rem; background: #fff; border-radius: 40px; border: 1px solid rgba(0,0,0,0.05); box-shadow: 0 10px 40px rgba(0,0,0,0.03); display: flex; flex-direction: column; align-items: center;">
+          <h2 style="font-size: clamp(1.5rem, 4vw, 2rem); margin-bottom: 1rem; line-height: 1.2; text-align: center; color: #111; font-weight: 700;">
+            <span class="fr">Prêt à obtenir de vrais résultats ?</span>
+            <span class="en">Ready to get real results?</span>
+          </h2>
+          <p style="font-size: 0.95rem; margin-bottom: 2rem; line-height: 1.5; text-align: center; color: #666; max-width: 500px;">
+            <span class="fr">Un message suffit pour démarrer. Des solutions sur-mesure pour booster ton activité, simplifier tes tâches et attirer plus de clients.</span>
+            <span class="en">One message is enough to start. Tailor-made solutions to boost your business, simplify tasks, and attract more clients.</span>
+          </p>
+          <a href="https://wa.me/233256625887" class="btn btn-cta-exact">
+            <span class="fr">Discuter du projet</span><span class="en">Discuss your project</span>
+          </a>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <div class="footer-grid">
+      <div class="footer-col" style="padding-right: 2rem;">
+        <a href="/" class="logo" style="margin-bottom: 1.5rem; display: inline-block;">
+          <img src="/logo.png" alt="Royal Data" style="height: 60px; width: auto; object-fit: contain;">
+        </a>
+        <p style="font-size: 0.95rem;">
+          <span class="fr">Agence IA basée au Bénin, au service de clients partout en ligne. Des méthodes simples pour des résultats concrets.</span>
+          <span class="en">AI Agency based in Benin, serving clients online everywhere. Simple methods for concrete results.</span>
+        </p>
+      </div>
+      <div class="footer-col">
+        <h4>Navigation</h4>
+        <ul class="footer-links">
+          <li><a href="/"><span class="fr">Accueil</span><span class="en">Home</span></a></li>
+          <li><a href="/produits.html"><span class="fr">Nos produits</span><span class="en">Our products</span></a></li>
+          <li><a href="/a-propos.html"><span class="fr">À propos</span><span class="en">About us</span></a></li>
+          <li><a href="/contact.html"><span class="fr">Contact</span><span class="en">Contact</span></a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Services</h4>
+        <ul class="footer-links">
+          <li><a href="/#services"><span class="fr">Communication</span><span class="en">Communication</span></a></li>
+          <li><a href="/#services"><span class="fr">Affiches</span><span class="en">Posters</span></a></li>
+          <li><a href="/#services"><span class="fr">Vidéos</span><span class="en">Videos</span></a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>
+          <span class="fr">Nous suivre</span><span class="en">Follow us</span>
+        </h4>
+        <div class="social-icons">
+          <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#" aria-label="TikTok"><i class="fa-brands fa-tiktok"></i></a>
+          <a href="#" aria-label="X / Twitter"><i class="fa-brands fa-x-twitter"></i></a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      &copy; 2026 Royal Data. <span class="fr">Tous droits réservés.</span><span class="en">All rights reserved.</span> | royaldata00@gmail.com
+    </div>
+  </footer>
+
+  <script type="module" src="/main.js"></script>
+</body>
+</html>
